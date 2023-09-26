@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.7.5/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Inter google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>PH Tube</title>
+
+    <!-- font style -->
+    <style>
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="container mx-auto font-inter">
+    <header>
+      <nav class="flex justify-between mt-12 px-2">
+        <div>
+          <a href="index.html"><img src="Logo.png" alt="" /></a>
+        </div>
+        <div>
+          <!-- <button class="bg-rose-600 text-white px-5 py-2 rounded-md">
+            Blog
+          </button> -->
+          <a href="index.html"
+            ><button
+              class="btn btn-active bg-rose-600 text-white px-5 py-2 rounded-md"
+            >
+              Home
+            </button></a
+          >
+        </div>
+      </nav>
+      <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+    </header>
+    <main class="px-2">
+      <section>
+        <div>
+          <h1 class="font-bold text-3xl mb-3">
+            1. Discuss the scope of var, let, and const
+          </h1>
+          <p class="mb-3">
+            In JavaScript, the scope of variables declared using var, let, and
+            const differs, and understanding these scopes is essential for
+            writing reliable and maintainable code. Here's a discussion of the
+            scope of each:
+          </p>
+          <h2 class="font-bold text-2xl mb-2">Var Scope:</h2>
+          <p>
+            var variables are function-scoped, or globally scoped if declared
+            outside of any function. They are hoisted to the top of their
+            containing function or global scope. Variables declared with var are
+            hoisted to the top of their containing function or global scope.
+          </p>
+        </div>
+
+        <div class="mt-4">
+          <div>
+            <h2 class="font-bold text-2xl mb-2">let and const Scope:</h2>
+            <p>
+              let and const declarations are block-scoped, which means their
+              scope is limited to the nearest enclosing block (usually denoted
+              by curly braces {}). This includes loops, conditionals, and
+              functions.Unlike var, let and const are not hoisted to the top of
+              their containing block. This makes the code behavior more
+              predictable and less prone to unexpected issues. They are not
+              hoisted to the top of their containing block, reducing unexpected
+              behavior.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-8">
+        <div>
+          <h1 class="font-bold text-3xl mb-3">
+            2. Tell us the use cases of null and undefined
+          </h1>
+          <p class="mb-3">
+            In JavaScript, both null and undefined are used to represent the
+            absence of a value or the lack of a meaningful value, but they are
+            used in slightly different contexts and have distinct use cases:
+          </p>
+          <h2 class="font-bold text-2xl mb-2">Undefined:</h2>
+          <p>
+            undefined represents a variable that has been declared but has not
+            been assigned a value or a function that doesn't return anything
+            explicitly. It is often used as the default initial value for
+            function parameters. undefined is also the default value of object
+            properties that have not been defined.
+          </p>
+          <h3 class="text-xl font-bold mt-2 mb-2">Use Cases:</h3>
+          <p>When a variable has been declared but not yet assigned.</p>
+          <p>
+            As a default parameter value to handle missing or undefined function
+            arguments.
+          </p>
+          <p>
+            As the initial value for variables that will later hold specific
+            values.
+          </p>
+        </div>
+        <div class="mt-4 mb-8">
+          <h2 class="font-bold text-2xl mb-2">Null:</h2>
+          <p>
+            Null represents the intentional absence of any object value or a
+            deliberate assignment of "no value." It is often used to indicate
+            that a variable or object property should have no value or should be
+            reset. null is explicitly assigned by the programmer to signify the
+            absence of a meaningful value.
+          </p>
+          <h3 class="text-xl font-bold mt-2 mb-2">Use Cases:</h3>
+          <p>
+            To explicitly set a variable or object property to indicate no value
+            or reset it.
+          </p>
+          <p>
+            As a return value for functions that need to indicate the absence of
+            a meaningful result.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <h1 class="font-bold text-3xl mb-3">
+            3. What do you mean by REST API?
+          </h1>
+          <p class="mb-3">
+            REST API, which stands for Representational State Transfer
+            Application Programming Interface, is a set of architectural
+            principles and constraints used for designing networked applications
+            and services. It's a style of building web services that are
+            scalable, stateless, and easy to consume. REST is not a technology
+            itself but a set of constraints and guidelines for designing web
+            services. RESTful APIs are widely used in web development,
+            especially for building web services and APIs that enable
+            communication between different systems and devices over the
+            internet. They are known for their simplicity, scalability, and ease
+            of use, making them a popular choice for many applications and
+            services.
+          </p>
+          <h3 class="text-xl font-bold mt-2 mb-2">
+            Here are the key principles and characteristics of a REST API:
+          </h3>
+          <ol class="mb-8">
+            <li>Statelessness</li>
+            <li>Client-Server Architecture</li>
+            <li>Uniform Interface</li>
+            <li>Resource-Based</li>
+            <li>Representation</li>
+            <li>Stateless Communication</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

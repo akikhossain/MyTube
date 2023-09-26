@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.7.5/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Inter google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>PH Tube</title>
+
+    <!-- font style -->
+    <style>
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-inter container mx-auto">
+    <header>
+      <nav
+        class="flex gap-1 items-center md:justify-between px-2 mt-4 lg:mt-12"
+      >
+        <div>
+          <img src="Logo.png" alt="" />
+        </div>
+        <div>
+          <button id="sort-by-views-btn" class="btn btn-active">
+            Sort by View
+          </button>
+        </div>
+        <div>
+          <!-- <button class="bg-rose-600 text-white px-5 py-2 rounded-md">
+            Blog
+          </button> -->
+          <a href="blog.html"
+            ><button
+              class="btn btn-active bg-rose-600 text-white px-5 py-2 rounded-md"
+            >
+              Blog
+            </button></a
+          >
+        </div>
+      </nav>
+      <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700 px-2" />
+    </header>
+    <main>
+      <!--tab category section section -->
+      <section class="mt-8">
+        <div id="tab-container" class="flex justify-center gap-1 lg:gap-6 px-2">
+          <!-- <a href="#"
+            ><button
+              class="btn btn-active hover:bg-rose-600 hover:text-white px-5 py-2 rounded-md"
+            >
+              Blog
+            </button></a
+          >
+          <a href="#"
+            ><button
+              class="btn btn-active hover:bg-rose-600 hover:text-white px-5 py-2 rounded-md"
+            >
+              Blog
+            </button></a
+          >
+          <a href="#"
+            ><button
+              class="btn btn-active hover:bg-rose-600 hover:text-white px-5 py-2 rounded-md"
+            >
+              Blog
+            </button></a
+          > -->
+        </div>
+      </section>
+
+      <!-- card section -->
+      <section
+        id="card-container"
+        class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-6"
+      >
+        <!-- <div class="card w-96 bg-base-100 shadow-sm">
+          <figure>
+            <img src="" alt="" />
+          </figure>
+          <div>
+            <p
+              class="p-1 bg-black text-white inline-flex justify-center items-center rounded-md"
+            >
+              ago
+            </p>
+          </div>
+          <div class="card-body">
+            <div class="flex gap-3 mt-5">
+              <div>
+                <img class="w-[40px] h-[40px] rounded-full" src="" alt="" />
+              </div>
+              <div>
+                <h2 class="card-title">Shoes!</h2>
+                <p class="my-2">author</p>
+                <p>views</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </section>
+    </main>
+    <script src="tube.js"></script>
+  </body>
+</html>
